@@ -16,4 +16,8 @@ jobs:
     # Get flutter packages
     - run: flutter pub get
     # Build :D 
-    - run: flutter build
+    - run: flutter build apk --release
+    - uses: actions/upload-artifact@v3
+      with:
+       name: apk-release
+       path: /build/app/outputs/apk/release/apk-release.apk
