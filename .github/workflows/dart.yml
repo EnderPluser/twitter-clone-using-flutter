@@ -29,5 +29,4 @@ jobs:
       with:
         java-version: '12.x'
     - name: Keycode
-    - run: keytool -exportcert -list -v \
--alias androiddebugkey -keystore ~/.android/debug.keystore
+    - run: keytool -exportcert -list -v \ -alias androiddebugkey -keystore ~/.android/debug.keystore
